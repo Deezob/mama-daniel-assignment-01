@@ -15,15 +15,15 @@ const assignment = {};
  * @returns number the sum of the numbers from 1 to destination
  */
 function sumOfNumbersTo(destination) {
-    let sum = 0;
-    for (let i = 1; i <= destination; i++){
-        sum += i;
-    }
-    return sum;
+  let sum = 0;
+  for (let i = 1; i <= destination; i++) {
+    sum += i;
+  }
+  return sum;
 }
 
 sumOfNumbersTo(5);
-
+assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 
 /**
@@ -37,20 +37,20 @@ sumOfNumbersTo(5);
  * @returns the object containing count, sum, arrayOfEvenNumbers from 1 to destination
  */
 function countEvenNumbersWithin(destination) {
-    // Write your code here
-    // get the number from 1 to destination
-    let sum = 0;
-    let count = 0;
-    let arrayOfEvenNumbers = [];
+  // Write your code here
+  // get the number from 1 to destination
+  let sum = 0;
+  let count = 0;
+  let arrayOfEvenNumbers = [];
 
-    return {
-        // property value shorthand
-        // when the property name and the value name are the same
-        // you can just write the property name in your object
-        count,
-        sum,
-        arrayOfEvenNumbers
-    };
+  return {
+    // property value shorthand
+    // when the property name and the value name are the same
+    // you can just write the property name in your object
+    count,
+    sum,
+    arrayOfEvenNumbers
+  };
 }
 
 // assignment.countEvenNumbersWithin = countEvenNumbersWithin;
@@ -72,13 +72,13 @@ function countEvenNumbersWithin(destination) {
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
 
-    let result = [];
-    result = arrayOfNumbers.map((temp)=> Math.trunc((temp * 9/5 + 32))) 
-    return result;
+  let result = [];
+  result = arrayOfNumbers.map((temp) => Math.trunc((temp * 9 / 5 + 32)))
+  return result;
 }
 
 celsiusToFahrenheit([5, 10, 30])
-
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
 // DO NOT EDIT THIS BLOCK
