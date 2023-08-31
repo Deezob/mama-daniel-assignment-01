@@ -22,7 +22,7 @@ function sumOfNumbersTo(destination) {
   return sum;
 }
 
-sumOfNumbersTo(5);
+sumOfNumbersTo(10);
 assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 
@@ -73,7 +73,10 @@ function countEvenNumbersWithin(destination) {
 function celsiusToFahrenheit(arrayOfNumbers) {
 
   let result = [];
-  result = arrayOfNumbers.map((temp) => Math.trunc((temp * 9 / 5 + 32)))
+  for (let temp of arrayOfNumbers) {
+    result.push(Math.trunc((temp * 9 / 5 + 32)))
+  }
+  //result = arrayOfNumbers.map((temp) => Math.trunc((temp * 9 / 5 + 32)))
   return result;
 }
 
